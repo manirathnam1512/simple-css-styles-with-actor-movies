@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-size: 1.5rem;
+    background-color: aqua;
+    background: radial-gradient(whitesmoke,grey);
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+header,nav,main,footer{
+    display: grid;
+    text-align: center;
+    place-content: center;
+    grid-template-columns: 100%;
+}
+nav{
+    display: flex;
+    background-color: bisque;
+    color: black;
+    padding: 0.5rem;
+    font-weight: bolder;
+    justify-content: space-evenly;
+
+}
+header,footer{
+    background-color: black;
+    color: white;
+    position: sticky;
+    padding: 0.5rem;
+}
+header{
+    top: 0;
+}
+main{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1rem;
+
+}
+footer{
+    bottom: 0;
+}
+.one {
+    scroll-margin-top: 8rem;
+    width: min(100%, 450px);
+    background-color: blueviolet;
+    border: 2px solid #000;
+    border-radius: 15px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+.one img {
+    border: 5px double #333;
+    border-radius: 50%;
+}
+.two {
+    scroll-margin-top: 8rem;
+    width: min(100%, 450px);
+    background-color: blueviolet;
+    border: 2px solid #000;
+    border-radius: 15px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.two img {
+    border: 5px double #333;
+    border-radius: 50%;
+}
+.three {
+    scroll-margin-top: 8rem;
+    width: min(100%, 450px);
+    background-color: blueviolet;
+    border: 2px solid #000;
+    border-radius: 15px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+.three img {
+    border: 5px double #333;
+    border-radius: 50%;
+}
+@media screen and (min-width: 481px){
+    body{
+        background-color: green;
+        background-image: radial-gradient(whitesmoke,green);
+    }
+}
+ 
+@media screen and (min-width: 650px){
+    body{
+        background-color: red;
+        background-image: radial-gradient(whitesmoke,red);
+    }
+}
+
+@media screen and (max-height: 400px)
+ and (min-aspect-ratio: 7/4){
+    body{
+        background-color: gold;
+        background-image: radial-gradient(whitesmoke,gold);
+    }
+}
